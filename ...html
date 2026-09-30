@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muhammad Shahab | Mechanical Engineer</title>
+
+<meta name="description"
+content="Muhammad Shahab - Mechanical Engineer | Maintenance | HVAC | Project Engineer | HSE Officer">
+
+<style>
+/* =========================================================
+   ROOT
+========================================================= */
+:root {
+    --bg: #07111f;
+    --bg2: #0b1728;
+    --card: rgba(255,255,255,0.055);
+    --card-hover: rgba(255,255,255,0.085);
+    --border: rgba(255,255,255,0.10);
+
+    --primary: #35c7ff;
+    --secondary: #7b61ff;
+    --success: #36e0a1;
+
+    --text: #f4f7fb;
+    --muted: #9baabd;
+
+    --shadow: 0 25px 70px rgba(0,0,0,0.35);
+
+    --radius: 22px;
+    --nav-height: 78px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(circle at 10% 10%, rgba(53,199,255,.10), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(123,97,255,.12), transparent 30%),
+        linear-gradient(135deg, var(--bg), var(--bg2));
+
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+.section {
+    padding: 110px 0;
+    scroll-margin-top: 90px;
+}
+
+.section-header {
+    margin-bottom: 55px;
+}
+
+.section-label {
+    color: var(--primary);
+    font-size: .85rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: var(--muted);
+    max-width: 750px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 13px 20px;
+    border-radius: 13px;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,.045);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,.09);
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: var(--nav-height);
+
+    z-index: 1000;
+
+    background: rgba(5,13,24,.78);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-mark {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    font-weight: 900;
+    color: white;
+}
+
+.logo-text {
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.logo-text span {
+    display: block;
+    font-size: .68rem;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-links a {
+    color: #c7d1df;
+    font-size: .9rem;
+    font-weight: 600;
+
+    transition: color .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.menu-btn {
+    display: none;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.04);
+    color: white;
+
+    border-radius: 11px;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: var(--nav-height);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(53,199,255,.2);
+    border-radius: 100px;
+
+    color: var(--primary);
+    background: rgba(53,199,255,.06);
+
+    font-size: .78rem;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--success);
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px var(--success);
+}
+
+.hero h1 {
+    font-size: clamp(3.2rem, 7vw, 6rem);
+    line-height: .95;
+    letter-spacing: -4px;
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        #ffffff,
+        var(--secondary)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-role {
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    color: #d1d9e5;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero-summary {
+    color: var(--muted);
+    max-width: 720px;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.contact-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+
+    color: var(--muted);
+    font-size: .88rem;
+}
+
+.contact-mini a:hover {
+    color: var(--primary);
+}
+
+/* Hero visual */
+
+.hero-visual {
+    position: relative;
+}
+
+.engineer-card {
+    padding: 34px;
+    min-height: 470px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.engineer-card::before {
+    content: "";
+
+    position: absolute;
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    background: rgba(53,199,255,.12);
+
+    filter: blur(20px);
+
+    top: -80px;
+    right: -60px;
+}
+
+.engineer-icon {
+    width: 95px;
+    height: 95px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(53,199,255,.18),
+            rgba(123,97,255,.18)
+        );
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    font-size: 3rem;
+
+    margin-bottom: 30px;
+}
+
+.engineer-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.engineer-card p {
+    color: var(--muted);
+}
+
+.hero-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+.hero-stat {
+    padding: 17px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+.hero-stat strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.hero-stat span {
+    color: var(--muted);
+    font-size: .78rem;
+}
+
+/* =========================================================
+   COMPETENCIES
+========================================================= */
+
+.competency-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+
+.competency {
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+.competency:hover {
+    transform: translateY(-5px);
+    background: var(--card-hover);
+}
+
+.competency-number {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 11px;
+
+    background: rgba(53,199,255,.10);
+    color: var(--primary);
+
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.competency span {
+    color: #d8e0eb;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* =========================================================
+   EXPERIENCE TIMELINE
+========================================================= */
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+    left: 19px;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background: linear-gradient(
+        var(--primary),
+        rgba(123,97,255,.1)
+    );
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 35px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 10px;
+    top: 28px;
+
+    width: 19px;
+    height: 19px;
+
+    border-radius: 50%;
+
+    background: var(--bg);
+
+    border: 4px solid var(--primary);
+
+    box-shadow: 0 0 20px rgba(53,199,255,.35);
+}
+
+.experience-card {
+    padding: 32px;
+}
+
+.experience-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 20px;
+}
+
+.experience-company {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: .88rem;
+
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.experience-card h3 {
+    margin: 5px 0;
+    font-size: 1.45rem;
+}
+
+.experience-location,
+.experience-date {
+    color: var(--muted);
+    font-size: .86rem;
+}
+
+.experience-date {
+    white-space: nowrap;
+
+    padding: 7px 12px;
+
+    background: rgba(255,255,255,.05);
+    border-radius: 9px;
+}
+
+.experience-description {
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+.experience-list {
+    list-style: none;
+}
+
+.experience-list li {
+    position: relative;
+    padding-left: 22px;
+
+    color: #c5cfdd;
+
+    margin: 11px 0;
+    font-size: .91rem;
+}
+
+.experience-list li::before {
+    content: "▹";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--primary);
+    font-weight: 900;
+}
+
+/* =========================================================
+   PROJECT
+========================================================= */
+
+.project-card {
+    padding: 35px;
+
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
+
+    overflow: hidden;
+}
+
+.project-icon {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 20px;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 2rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(53,199,255,.14),
+            rgba(123,97,255,.18)
+        );
+
+    border: 1px solid var(--border);
+}
+
+.project-meta {
+    color: var(--primary);
+
+    font-size: .8rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-card h3 {
+    font-size: 1.65rem;
+    margin: 8px 0;
+}
+
+.project-location {
+    color: var(--muted);
+    font-size: .88rem;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    color: #c4cfdd;
+    margin: 9px 0;
+}
+
+.project-list li::before {
+    content: "✓";
+    color: var(--success);
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+/* =========================================================
+   EDUCATION / CERTIFICATION
+========================================================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.info-card {
+    padding: 30px;
+}
+
+.info-card .small-label {
+    color: var(--primary);
+
+    font-size: .78rem;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info-card h3 {
+    font-size: 1.35rem;
+    margin: 12px 0 5px;
+}
+
+.info-card p {
+    color: var(--muted);
+}
+
+.info-date {
+    display: inline-block;
+
+    margin-top: 16px;
+
+    color: #dce5ef;
+
+    font-size: .8rem;
+
+    background: rgba(255,255,255,.05);
+    border-radius: 8px;
+
+    padding: 6px 10px;
+}
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+
+.skill-card {
+    padding: 25px;
+}
+
+.skill-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skill-tag {
+    padding: 8px 12px;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: #cdd7e4;
+
+    font-size: .8rem;
+
+    transition: .2s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(53,199,255,.09);
+    border-color: rgba(53,199,255,.3);
+    color: white;
+}
+
+/* =========================================================
+   LANGUAGES
+========================================================= */
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.language-card {
+    padding: 25px;
+}
+
+.language-card h3 {
+    margin-bottom: 5px;
+}
+
+.language-card p {
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.availability {
+    position: relative;
+    overflow: hidden;
+
+    padding: 45px;
+}
+
+.availability::after {
+    content: "✈";
+
+    position: absolute;
+
+    right: 45px;
+    top: 30px;
+
+    font-size: 6rem;
+
+    opacity: .035;
+}
+
+.availability-badge {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    padding: 7px 12px;
+
+    background: rgba(54,224,161,.08);
+
+    color: var(--success);
+
+    border: 1px solid rgba(54,224,161,.2);
+
+    border-radius: 100px;
+
+    font-size: .8rem;
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.availability h2 {
+    font-size: clamp(1.8rem,4vw,2.8rem);
+    max-width: 800px;
+
+    margin-bottom: 15px;
+}
+
+.availability p {
+    color: var(--muted);
+    max-width: 900px;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 32px;
+}
+
+.contact-item {
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item strong {
+    display: block;
+    margin-top: 4px;
+
+    font-size: .95rem;
+
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    color: var(--primary);
+}
+
+.contact-form {
+    display: grid;
+    gap: 14px;
+}
+
+.form-group {
+    display: grid;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: .8rem;
+    color: #c9d3df;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,.09);
+
+    background: rgba(0,0,0,.16);
+
+    color: white;
+
+    outline: none;
+
+    font-family: inherit;
+
+    transition: .2s ease;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(53,199,255,.55);
+
+    box-shadow:
+        0 0 0 3px rgba(53,199,255,.08);
+}
+
+.form-message {
+    display: none;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    background: rgba(54,224,161,.08);
+
+    border: 1px solid rgba(54,224,161,.2);
+
+    color: var(--success);
+
+    font-size: .85rem;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 35px 0;
+
+    border-top: 1px solid rgba(255,255,255,.07);
+
+    color: var(--muted);
+
+    text-align: center;
+
+    font-size: .82rem;
+}
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+#backToTop {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 13px;
+
+    border: 1px solid var(--border);
+
+    background: rgba(9,19,32,.88);
+
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s ease;
+
+    z-index: 500;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTop:hover {
+    background: var(--primary);
+}
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        position: absolute;
+
+        top: var(--nav-height);
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+
+        padding: 25px;
+
+        background: rgba(5,13,24,.97);
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-visual {
+        max-width: 600px;
+    }
+
+    .competency-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .competency-grid,
+    .skills-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-top {
+        flex-direction: column;
+    }
+
+    .experience-date {
+        white-space: normal;
+    }
+
+    .timeline-item {
+        padding-left: 48px;
+    }
+
+    .timeline::before {
+        left: 12px;
+    }
+
+    .timeline-dot {
+        left: 3px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .availability {
+        padding: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#home" class="logo">
+            <div class="logo-mark">MS</div>
+
+            <div class="logo-text">
+                MUHAMMAD SHAHAB
+                <span>Mechanical Engineer</span>
+            </div>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#competencies">Competencies</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#availability">Availability</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero section" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                OPEN TO RELOCATION
+            </div>
+
+            <h1>
+                Muhammad <span>Shahab</span>
+            </h1>
+
+            <div class="hero-role">
+                Mechanical Engineer | Maintenance | HVAC |
+                Project Engineer | HSE Officer
+            </div>
+
+            <p class="hero-summary">
+                Field experienced Mechanical Engineer with 3+ years of
+                hands-on experience in industrial maintenance, QA/QC
+                compliance, and HSE management within heavy manufacturing
+                environments. Holds a NEBOSH International General
+                Certificate in Occupational Health and Safety and
+                certification in HVAC managment. Proven track record in
+                preventive and corrective maintenance, root cause analysis
+                (RCA), equipment reliability improvement, and
+                cross-functional team coordination.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#experience" class="btn btn-primary">
+                    Explore Experience →
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="contact-mini">
+
+                <a href="mailto:Shahabjamal16@gmail.com">
+                    ✉ Shahabjamal16@gmail.com
+                </a>
+
+                <span>
+                    LinkedIn: muhammad-shahab-719ba521
+                </span>
+
+                <span>
+                    Open to Relocation
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+            <div class="engineer-card card">
+
+                <div class="engineer-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Mechanical Engineering
+                </h3>
+
+                <p>
+                    Maintenance • HVAC • Project Engineering • HSE
+                </p>
+
+                <div class="hero-stat-grid">
+
+                    <div class="hero-stat">
+                        <strong>3+</strong>
+                        <span>Years Hands-on Experience</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>500+</strong>
+                        <span>Student Body Managed</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>40+</strong>
+                        <span>Staff Members Managed</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>4</strong>
+                        <span>Engineers Led</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROFESSIONAL SUMMARY
+========================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Professional Summary
+            </div>
+
+            <h2 class="section-title">
+                Engineering Experience Built in the Field
+            </h2>
+
+            <p class="section-description">
+                Adept at coordinating with contractors, vendors, and
+                multi-disciplinary teams to deliver projects on time and
+                within budget. Actively seeking opportunities in in
+                Mechanical Maintenance, HSE, or Project Engineering roles.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CORE COMPETENCIES
+========================================================= -->
+
+<section class="section" id="competencies">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Core Competencies
+            </div>
+
+            <h2 class="section-title">
+                Professional Capabilities
+            </h2>
+
+            <p class="section-description">
+                Technical, operational, safety, documentation, and
+                leadership capabilities from the professional profile.
+            </p>
+
+        </div>
+
+
+        <div class="competency-grid">
+
+            <div class="competency card reveal">
+                <div class="competency-number">01</div>
+                <span>Preventive & Corrective Maintenance</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">02</div>
+                <span>HVAC Certification</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">03</div>
+                <span>QA/QC Compliance</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">04</div>
+                <span>HSE Management & NEBOSH</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">05</div>
+                <span>Root Cause Analysis (RCA)</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">06</div>
+                <span>Equipment Reliability & Condition Monitoring</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">07</div>
+                <span>Shutdown & Commissioning</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">08</div>
+                <span>Vendor Management & Procurement</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">09</div>
+                <span>Technical Documentation & Reporting</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">10</div>
+                <span>SolidWorks</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">11</div>
+                <span>AutoCAD</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">12</div>
+                <span>Cross-functional Team Leadership</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">13</div>
+                <span>Safety Risk Assessment</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">14</div>
+                <span>Permit to Work (PTW)</span>
+            </div>
+
+            <div class="competency card reveal">
+                <div class="competency-number">15</div>
+                <span>MS Office</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROFESSIONAL EXPERIENCE
+========================================================= -->
+
+<section class="section" id="experience">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Professional Experience
+            </div>
+
+            <h2 class="section-title">
+                Career Experience
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <!-- BESTWAY -->
+
+            <article class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card card">
+
+                    <div class="experience-top">
+
+                        <div>
+
+                            <div class="experience-company">
+                                BESTWAY CEMENT LIMITED
+                            </div>
+
+                            <h3>
+                                Mechanical Engineer
+                            </h3>
+
+                            <div class="experience-location">
+                                Hattar, Pakistan
+                            </div>
+
+                        </div>
+
+                        <div class="experience-date">
+                            Jan 2021 – Dec 2023
+                        </div>
+
+                    </div>
+
+
+                    <p class="experience-description">
+                        One of Pakistan's largest integrated cement
+                        manufacturers operating advanced production
+                        facilities and in-house power plants.
+                    </p>
+
+
+                    <ul class="experience-list">
+
+                        <li>
+                            Supervised on-site mechanical operations,
+                            inspections, and control systems across
+                            production and utility departments, ensuring
+                            full compliance with QA/QC protocols and HSE
+                            safety standards.
+                        </li>
+
+                        <li>
+                            Executed preventive and corrective maintenance
+                            (PM/CM) programs for rotating and static
+                            mechanical equipment, reducing unplanned
+                            downtime and improving overall equipment
+                            effectiveness (OEE).
+                        </li>
+
+                        <li>
+                            Conducted root cause analysis (RCA) for
+                            recurring equipment failures; implemented
+                            corrective actions that enhanced system
+                            reliability by identifying failure patterns
+                            and applying engineering solutions.
+                        </li>
+
+                        <li>
+                            Coordinated with maintenance, instrumentation,
+                            and operations teams for troubleshooting,
+                            planned shutdowns, and commissioning of
+                            mechanical systems.
+                        </li>
+
+                        <li>
+                            Managed vendor follow-ups for timely material
+                            and spare parts delivery; verified contractor
+                            work scope and authorized payments using
+                            measurement books (MBs).
+                        </li>
+
+                        <li>
+                            Maintained technical documentation including
+                            daily work reports, maintenance logs,
+                            inspection records, and safety compliance
+                            checklists.
+                        </li>
+
+                        <li>
+                            Ensured full compliance with environmental,
+                            health, and safety (HSE) regulations,
+                            conducting safety audits, toolbox talks,
+                            and risk assessments across the department.
+                        </li>
+
+                        <li>
+                            Collaborated with procurement teams for
+                            preparation of material requisitions, BOQs,
+                            and technical specifications for equipment
+                            overhaul.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+            <!-- RUSTUM -->
+
+            <article class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card card">
+
+                    <div class="experience-top">
+
+                        <div>
+
+                            <div class="experience-company">
+                                THE RUSTUM MODEL SCHOOL & COLLEGE
+                            </div>
+
+                            <h3>
+                                Administrator & Principal
+                            </h3>
+
+                            <div class="experience-location">
+                                Mardan, Pakistan
+                            </div>
+
+                        </div>
+
+                        <div class="experience-date">
+                            Jan 2023 – Dec 2025
+                        </div>
+
+                    </div>
+
+
+                    <p class="experience-description">
+                        Career Transition – Leadership Role
+                    </p>
+
+
+                    <ul class="experience-list">
+
+                        <li>
+                            Led institution-wide operations covering HR,
+                            administration, accounts, and compliance for
+                            a 500+ student body and 40+ staff members.
+                        </li>
+
+                        <li>
+                            Managed budgeting, financial recovery,
+                            payroll processing, and revenue generation
+                            strategies, demonstrating commercial acumen
+                            applicable to engineering project cost
+                            control.
+                        </li>
+
+                        <li>
+                            Implemented health, safety, and environmental
+                            (HSE) compliance policies across the facility,
+                            ensuring staff and student wellbeing.
+                        </li>
+
+                        <li>
+                            Developed and tracked KPIs across departments,
+                            demonstrating strong reporting, analytical,
+                            and project management capabilities.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ENGINEERING PROJECT
+========================================================= -->
+
+<section class="section" id="projects">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Engineering Project Experience
+            </div>
+
+            <h2 class="section-title">
+                Design & Fabrication of Injection Molding Machine
+            </h2>
+
+        </div>
+
+
+        <div class="project-card card reveal">
+
+            <div class="project-icon">
+                ⚙️
+            </div>
+
+            <div>
+
+                <div class="project-meta">
+                    Group Leader & Project Manager
+                </div>
+
+                <h3>
+                    DESIGN & FABRICATION OF INJECTION MOLDING MACHINE
+                </h3>
+
+                <div class="project-location">
+                    Islamabad, Pakistan · 2020 – 2021
+                </div>
+
+
+                <ul class="project-list">
+
+                    <li>
+                        Led a team of four engineers in a year-long final
+                        year design project focused on manufacturing and
+                        sustainability.
+                    </li>
+
+                    <li>
+                        Conducted full technical and economic feasibility
+                        analysis, authored engineering design reports,
+                        and presented findings to faculty evaluators.
+                    </li>
+
+                    <li>
+                        Managed project planning, task delegation,
+                        milestone tracking, and documentation to meet
+                        academic deadlines.
+                    </li>
+
+                    <li>
+                        Utilized SolidWorks for 3D modeling and design
+                        validation; produced fabrication drawings using
+                        AutoCAD.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION & CERTIFICATION
+========================================================= -->
+
+<section class="section" id="education">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Education & Qualifications
+            </div>
+
+            <h2 class="section-title">
+                Education & Certifications
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-card card reveal">
+
+                <div class="small-label">
+                    Education
+                </div>
+
+                <h3>
+                    B.S. Mechanical Engineering
+                </h3>
+
+                <p>
+                    International Islamic University Islamabad (IIUI),
+                    Islamabad, Pakistan
+                </p>
+
+                <span class="info-date">
+                    2017 – 2022
+                </span>
+
+            </div>
+
+
+            <div class="info-card card reveal">
+
+                <div class="small-label">
+                    Certification & Professional Qualification
+                </div>
+
+                <h3>
+                    NEBOSH International General Certificate in
+                    Occupational Health and Safety
+                </h3>
+
+                <p>
+                    Internationally recognized qualification – highly
+                    valued for HSE roles in UAE, Saudi Arabia, and GCC
+                    countries.
+                </p>
+
+                <span class="info-date">
+                    Oct 2021
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECHNICAL SKILLS
+========================================================= -->
+
+<section class="section" id="skills">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Technical Skills
+            </div>
+
+            <h2 class="section-title">
+                Technical Toolkit
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card card reveal">
+
+                <h3>
+                    Design & Engineering Software
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">SolidWorks</span>
+                    <span class="skill-tag">AutoCAD</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card card reveal">
+
+                <h3>
+                    Maintenance & Reliability
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">
+                        Preventive Maintenance (PM)
+                    </span>
+
+                    <span class="skill-tag">
+                        Corrective Maintenance (CM)
+                    </span>
+
+                    <span class="skill-tag">
+                        RCA
+                    </span>
+
+                    <span class="skill-tag">
+                        Condition Monitoring
+                    </span>
+
+                    <span class="skill-tag">
+                        CMMS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card card reveal">
+
+                <h3>
+                    HSE Tools
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">
+                        Risk Assessment
+                    </span>
+
+                    <span class="skill-tag">
+                        Permit to Work (PTW)
+                    </span>
+
+                    <span class="skill-tag">
+                        Safety Audits
+                    </span>
+
+                    <span class="skill-tag">
+                        Toolbox Talks
+                    </span>
+
+                    <span class="skill-tag">
+                        Incident Investigation
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card card reveal">
+
+                <h3>
+                    Documentation
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">
+                        Technical Reports
+                    </span>
+
+                    <span class="skill-tag">
+                        BOQs
+                    </span>
+
+                    <span class="skill-tag">
+                        P&IDs
+                    </span>
+
+                    <span class="skill-tag">
+                        Maintenance Logs
+                    </span>
+
+                    <span class="skill-tag">
+                        MBs
+                    </span>
+
+                    <span class="skill-tag">
+                        Method Statements
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card card reveal">
+
+                <h3>
+                    Project Tools
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">
+                        MS Office (Word, Excel, PowerPoint)
+                    </span>
+
+                    <span class="skill-tag">
+                        Project Planning & Scheduling
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LANGUAGES
+========================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Languages
+            </div>
+
+            <h2 class="section-title">
+                Language Proficiency
+            </h2>
+
+        </div>
+
+
+        <div class="language-grid">
+
+            <div class="language-card card reveal">
+
+                <h3>English</h3>
+
+                <p>
+                    Professional Proficiency
+                    (Reading, Writing, Speaking)
+                </p>
+
+            </div>
+
+
+            <div class="language-card card reveal">
+
+                <h3>Urdu</h3>
+
+                <p>
+                    Native / Proficient
+                </p>
+
+            </div>
+
+
+            <div class="language-card card reveal">
+
+                <h3>Arabic</h3>
+
+                <p>
+                    Elementary (Learning – relevant for GCC countries)
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="container">
+
+        <div class="availability card reveal">
+
+            <div class="availability-badge">
+                <span class="status-dot"></span>
+                IMMEDIATELY AVAILABLE
+            </div>
+
+            <h2>
+                Available for Relocation Across the GCC
+            </h2>
+
+            <p>
+                Immediately available for relocation to UAE, Saudi Arabia,
+                Qatar, Kuwait, or Oman. Willing to work on a single or
+                family status basis. Valid Pakistani passport holder.
+                Ready to obtain required medical clearances and visa
+                documentation upon offer.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="section-description">
+                For professional opportunities, engineering roles,
+                maintenance, HSE, or project engineering opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card card reveal">
+
+                <div class="contact-item">
+
+                    <span>Email</span>
+
+                    <strong>
+                        <a href="mailto:Shahabjamal16@gmail.com">
+                            Shahabjamal16@gmail.com
+                        </a>
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>LinkedIn</span>
+
+                    <strong>
+                        muhammad-shahab-719ba521
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>Relocation</span>
+
+                    <strong>
+                        Open to Relocation
+                    </strong>
+
+                </div>
+
+
+               
+
+
+            <div class="contact-card card reveal">
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-group">
+
+                        <label for="visitorName">
+                            Your Name
+                        </label>
+
+                        <input
+                            id="visitorName"
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="visitorEmail">
+                            Your Email
+                        </label>
+
+                        <input
+                            id="visitorEmail"
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="visitorMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="visitorMessage"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
+                        Send Message →
+                    </button>
+
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                    >
+                        Message prepared successfully.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        © <span id="year"></span> Muhammad Shahab.
+        Mechanical Engineer | Maintenance | HVAC |
+        Project Engineer | HSE Officer
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button id="backToTop" aria-label="Back to top">
+    ↑
+</button>
+
+
+<script>
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("open");
+
+    menuBtn.textContent =
+        navLinks.classList.contains("open")
+        ? "✕"
+        : "☰";
+
+});
+
+
+/* Close mobile menu after clicking */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll(".nav-links a");
+
+const navObserver = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                navItems.forEach(item => {
+
+                    item.classList.remove("active");
+
+                    if (
+                        item.getAttribute("href") ===
+                        "#" + entry.target.id
+                    ) {
+
+                        item.classList.add("active");
+
+                    }
+
+                });
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.25
+    }
+
+);
+
+sections.forEach(section => {
+    navObserver.observe(section);
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                revealObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+revealElements.forEach(element => {
+    revealObserver.observe(element);
+});
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+const backToTop =
+    document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 600) {
+
+        backToTop.classList.add("show");
+
+    } else {
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", event => {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("visitorName").value.trim();
+
+    const email =
+        document.getElementById("visitorEmail").value.trim();
+
+    const message =
+        document.getElementById("visitorMessage").value.trim();
+
+
+    if (!name || !email || !message) {
+
+        formMessage.style.display = "block";
+
+        formMessage.style.color = "#ff8a8a";
+
+        formMessage.style.borderColor =
+            "rgba(255,100,100,.25)";
+
+        formMessage.style.background =
+            "rgba(255,100,100,.08)";
+
+        formMessage.textContent =
+            "Please complete all fields.";
+
+        return;
+
+    }
+
+
+    formMessage.style.display = "block";
+
+    formMessage.style.color = "var(--success)";
+
+    formMessage.style.borderColor =
+        "rgba(54,224,161,.2)";
+
+    formMessage.style.background =
+        "rgba(54,224,161,.08)";
+
+    formMessage.textContent =
+        "Message prepared successfully.";
+
+    /*
+        This frontend form is ready for a backend such as
+        Supabase, Formspree, Netlify Forms, or another
+        email/database service.
+
+        No fake backend connection is included.
+    */
+
+    contactForm.reset();
+
+});
+
+
+/* =========================================================
+   CURRENT YEAR
+========================================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+========================================================= */
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.textContent = "☰";
+
+    }
+
+});
+
+
+/* =========================================================
+   SMART HEADER EFFECT
+========================================================= */
+
+let lastScroll = 0;
+
+const navbar =
+    document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > 50) {
+
+        navbar.style.boxShadow =
+            "0 12px 40px rgba(0,0,0,.25)";
+
+    } else {
+
+        navbar.style.boxShadow = "none";
+
+    }
+
+    lastScroll = currentScroll;
+
+});
+
+
+/* =========================================================
+   DYNAMIC SKILL INTERACTION
+========================================================= */
+
+document.querySelectorAll(".skill-tag").forEach(tag => {
+
+    tag.addEventListener("click", () => {
+
+        document.querySelectorAll(".skill-tag")
+            .forEach(item => {
+                item.style.outline = "none";
+            });
+
+        tag.style.outline =
+            "2px solid rgba(53,199,255,.45)";
+
+        setTimeout(() => {
+
+            tag.style.outline = "none";
+
+        }, 900);
+
+    });
+
+});
+
+
+/* =========================================================
+   SMOOTH INTERNAL NAVIGATION
+========================================================= */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function(event) {
+
+        const target =
+            document.querySelector(this.getAttribute("href"));
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
